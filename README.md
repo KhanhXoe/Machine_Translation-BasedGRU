@@ -14,8 +14,7 @@ Dự án này triển khai một hệ thống dịch máy dựa trên Mạng Nơ
    - [Tiền Xử Lý Dữ Liệu](#tiền-xử-lý-dữ-liệu)
    - [Kiến Trúc Mô Hình](#kiến-trúc-mô-hình)
    - [Huấn Luyện và Đánh Giá](#huấn-luyện-và-đánh-giá)
-8. [Đóng Góp](#đóng-góp)
-9. [Giấy Phép](#giấy-phép)
+8. [Giấy Phép](#giấy-phép)
 
 ## Tổng quan dự án 
 Dự án này xây dựng một mô hình dịch máy để dịch các câu tiếng Anh sang tiếng Việt. Nó sử dụng GRU hai chiều cho mã hóa và GRU với cơ chế teacher forcing cho giải mã. Hệ thống tiền xử lý dữ liệu văn bản (ví dụ: chuẩn hóa các từ viết tắt và định dạng thời gian), vector hóa dữ liệu bằng từ điển, và huấn luyện mô hình với DataLoader tùy chỉnh. Mô hình đã huấn luyện được triển khai thông qua ứng dụng Streamlit để dịch văn bản theo thời gian thực và trực quan hóa các chỉ số huấn luyện (Loss và điểm BLEU).
@@ -41,7 +40,7 @@ Xây Dựng Từ Điển: Tạo từ điển cho ngôn ngữ nguồn (tiếng An
 - Streamlit
 - CUDA (tùy chọn, để hỗ trợ GPU)
 
-## Hướng dẫn sử dụng mô hình
+## Hướng dẫn sử dụng
 __Huấn luyện mô hình__
 
 1. Chuẩn bị tập dữ liệu trong data.csv với hai cột: văn bản nguồn (tiếng Anh) và văn bản đích (tiếng Việt), cách nhau bằng dấu tab.
